@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#B6DADA;
+}
+
+header{
+    background-image: url('../image/meublepricipal.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+}
+
+.div1header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#063033;
+  z-index:3 ;
+  position:relative;
+}
+.div1header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+}
+
+ul li button:hover{
+  background-color: rgb(165, 201, 99);
+  padding:10px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+button{
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: #063033;
+  font-size: 20px;
+}
+
+.div1header ul li{
+    margin-left: 150px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px;
+   border: none;
+   
+}
+.RED {
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 70px;
+  text-align: center;
+  padding: 5px;
+  visibility:hidden;
+  opacity: 0;
+}
+
+.new{
+  visibility: visible;
+  opacity: 1;
+}
+
+.new2{
+  width: 350px;
+  height: 400px;
+ background-color: rgba(95, 158, 160, 0.411);
+ 
+}
+
+.peticarro{
+     background-color:#063033  ;
+     width: 150px;
+     height: 150px;
+     margin-top: 430px;
+     color: white;
+}
+
+h2{
+  padding: 20px;
+ text-align: center;
+}
+
+ .divprincipal{
+  display: flex;
+  justify-content: space-between;
+ }
+
+  .div1{
+    width: 350px;
+    height: 400px;
+    background-color:white;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .div2{
+    width: 350px;
+    height: 400px;
+    background-color:white;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .div3{
+    width: 350px;
+    height: 400px;
+    background-color:white ;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .n1{
+    background-image: url('../image/image1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+   
+  }
+
+  .n2{
+    background-image: url('../image/image2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+  }
+
+  .n3{
+    background-image: url('../image/meublepricipal.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+  }
+
+  .button1{
+    width: 200px;
+    height: 50px;
+    border: 2px solid red;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 550px;
+    margin-top: 60px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  .button1 a{
+    color: black;
+    text-decoration: none;
+  }
+
+  footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(184, 135, 11, 0.836);
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .footdiv2{
+    margin-top: 200px;
+    margin-right: 20px;
+  }
+
+  .footdiv2 img{
+    margin-right: 20px;
+  }
+
+  #menu{
+display: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+margin: 15px;
+
+  }
+
+
+  /*---------responsive-------------*/
+@media screen and (max-width:1080px){
+
+  #menu{display:flex;}
+  .div1header ul{
+    display: none;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+position: absolute;
+width:50%;
+height: 300px;
+background-color: #B6DADA;
+top: 70px;
+right: 0;
+backdrop-filter:blur(10px) ;
+margin-right: -50%;
+transition: 0.3s;
+  }
+  .div1header ul li button {
+    font-size: 1.3em;
+    background-color:transparent;
+    font-weight: bold;
+  }
+  
+
+  .divprincipal{
+    flex-direction: column;
+  }
+  .divprincipal div{
+    width: 80%;
+    height:500px ;
+    margin: auto;
+  }
+
+  .divprincipal div button {
+  height: 300px;
+  }
+  .button1{
+    margin-left: 300px;
+  }
+
+}
+ .montrer{
+  display: block;
+  margin-right: 0%;
+ }
+

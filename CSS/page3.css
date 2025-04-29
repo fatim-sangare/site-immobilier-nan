@@ -1,0 +1,230 @@
+.div{
+width: 50%;
+height: 700px;
+background-color: white;
+display: flex;
+margin-top: 40px;
+margin-left: 200px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border: 1px solid;
+}
+h1{
+    color: red;
+}
+.di{
+display:block;
+flex-direction: column;
+font-size: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div1{
+ display: flex;
+ flex-direction: column;
+width: 100%;
+height: 700px;
+background-color: rgba(226, 230, 230, 0.63);
+text-align: center;
+padding-right: 60px;
+font-size: 18px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+;
+}
+input{
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+    
+}
+.di2{
+    display: flex;
+    margin-left: 40px;
+
+}
+.div3{
+    margin-left: 30px;
+}
+
+label{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+select{
+    width: 78px;
+    height: 30px;
+}
+  
+button{
+    width: 200px;
+    height: 60px;
+    background-color:red;
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+    font-family:italic ;
+    margin-top: 20px;
+}
+
+
+/*-----------la partie de header---------*/
+.div1header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#063033;
+     z-index:3 ;
+  position:relative;
+  width: 100%;
+  height: 200px;
+}
+
+.div1header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+}
+
+ul li button:hover{
+  background-color: rgb(165, 201, 99);
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+li button{
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: #063033;
+  font-size: 20px;
+  height: 50px;
+  width: 120px;
+
+}
+
+.div1header ul button{
+    margin-left: 100px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 20px;
+   border: none;
+   
+}
+
+/*-----------la partie de RED---------*/
+.RED{
+    background-color: white;
+     width: 230px;
+      height: 200px; 
+      font-size: 1.em; 
+      padding: 7px; 
+      position: absolute;
+      right: 230px;
+     top: 60px;
+     z-index:1;
+     transform: translateY(10px);
+  }
+
+   
+  .RED {
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 70px;
+      text-align: center;
+      padding: 5px;
+      visibility:hidden;
+      opacity: 0;
+    }
+    
+
+    .new{
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .new2{
+        width: 350px;
+        height: 400px;
+       background-color: rgba(95, 158, 160, 0.411);
+       
+      }
+
+      /*-----------la partie de footer---------*/
+    footer{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(184, 135, 11, 0.836);
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+  
+    
+      .footdiv2{
+        margin-top: 200px;
+        margin-right: 40px; 
+      }
+      
+      .footdiv1 img{
+        height: 40px;
+        width: 40px;
+     border-radius: 0px;
+      }
+    
+      .footdiv2 img{
+        margin-right: 20px;
+        height: 50px;
+        width: 50px;
+    border-radius: 0px;
+      }
+
+
+       
+#menu{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 15px;
+  }  
+  
+  /*---------responsive-------------*/
+@media screen and (max-width:1080px){
+
+    #menu{display:flex;
+margin-left: 220px;
+    }
+    .div1header ul{
+      display: none;
+      flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        position: absolute;
+        width:50%;
+        height: 400px;
+        background-color: #B6DADA;
+        top: 100px;
+        right: -80px;
+        backdrop-filter:blur(10px) ;
+        margin-right: -50%;
+        transition: 0.56s;
+    }
+    .div1header ul li button {
+      font-size: 1.3em;
+      background-color:transparent;
+      font-weight: bold;
+    }
+    
+    
+  main img{
+    margin-top: 20px;
+  }
+    input{
+        margin: auto;
+    
+    }
+
+
+}
