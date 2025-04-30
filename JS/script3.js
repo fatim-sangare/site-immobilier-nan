@@ -63,3 +63,32 @@ sumbit.addEventListener('click',(e)=>{
     alert('message envoyer')
     window.location.href="../HTML/page1.html"
 })
+
+
+
+
+
+
+
+// la partie de locastorage------------
+
+
+document.querySelector(".soumettre").addEventListener("click", function () {
+    // Récupérer les valeurs des champs
+    const userData = {
+      nom: document.getElementById("nom").value,
+      prenom: document.getElementById("prenom").value,
+      telephone: document.getElementById("tel").value,
+      mail: document.getElementById("mail").value,
+      ville: document.getElementById("ville").value,
+      motDePasse: document.getElementById("mdp").value,
+      modele: document.getElementById("model").value,
+      nombreDePieces: document.getElementById("piece").value
+    };
+
+    // Stocker dans le localStorage
+    localStorage.setItem("utilisateur", JSON.stringify(userData));
+
+    // Optionnel : message de confirmation
+    alert("Données enregistrées dans le localStorage !");
+  });

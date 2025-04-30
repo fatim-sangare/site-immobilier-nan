@@ -41,8 +41,20 @@ button1.addEventListener('click',(e)=>{
 })
 
 button1.addEventListener('mouseover',(e)=>{
-button1.style.backgroundColor='rgba(68, 223, 223, 0.514)'
+button1.style.backgroundColor='red'
 })
+button1.addEventListener('mouseout',(e)=>{
+    button1.style.backgroundColor='white'
+})
+
+
+// ---la partie tranparente----
+
+// const divp=document.querySelectorAll('.divprincipal div')
+// divp.forEach((el)=>{el.addEventListener('mouseover',(e)=>{
+// divp.classList.add('transparent')
+// })
+// })
 
 
 // ------la partie respnsive---------

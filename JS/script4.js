@@ -22,7 +22,8 @@ acheter.addEventListener('click',(e)=>{
 const input=document.querySelectorAll('main input')
 input.forEach((el)=>{el.addEventListener('click',(e)=>{
     window.location.href='../HTML/page3.html'
-})})
+})
+})
 
 
 // ################# la partie RED ##################
